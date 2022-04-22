@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PrimeraApp = ( {saludo = 'Hola mundo'} ) => {
+const PrimeraApp = ( {saludo} ) => {
 
   return (
     <>
@@ -9,6 +10,10 @@ const PrimeraApp = ( {saludo = 'Hola mundo'} ) => {
     </>
   )
   
+}
+
+PrimeraApp.propTypes = {
+  saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
